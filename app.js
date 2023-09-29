@@ -1,3 +1,3 @@
 function alertButton() {
-    alert("hi")
+    alert("yo")
 }
