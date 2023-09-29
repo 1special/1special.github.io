@@ -1,1 +1,1 @@
-# 1special.github.io
+# speciaal.xyz
