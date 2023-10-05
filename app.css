@@ -1,9 +1,34 @@
-h1 {
-    color: red;
+@import url("https://use.typekit.net/tqg2kya.css"); /* interstate */
+@import url("https://use.typekit.net/tqg2kya.css"); /* komet */
+:root {
+    --bg: #282827;
+    --white: #f9fbff;
+    --yellow: #e1af45;
+    --gray1: #aea39e;
+    --gray2: #625d5e;
+    --gray3: #4b463e;
 }
-h2 {
-    color: blue;
+.title {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: var(--yellow);
+    font-size: 2em;
+    font-family: interstate;
+    padding-top: 0;
+}
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subtitle {
+    margin-top: 0;
+    text-align: center;
+    color: var(--gray1);
+    font-size: 1em;
+    font-family: komet;
 }
 body {
-    background-color: #242424;
+    background-color: var(--bg);
 }
