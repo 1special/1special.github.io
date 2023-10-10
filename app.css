@@ -1,73 +1,100 @@
 @import url("https://use.typekit.net/tqg2kya.css"); /* interstate, komet */
-:root {
-    --bg: #282827;
-    --white: #f9fbff;
-    --clr-1: #052b2f;
-    --clr-2: #073438;
-    --clr-3: #0e4b50;
-    --clr-4: #2d8f85;
-    --clr-5: #637c54;
-}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background: var(--bg);
+:root {
+    --bannerHeight: 90px;
+    --mainHeight: 2000px;
 }
+
 .banner {
+    z-index: 1;
     width: 100%;
-    height: 100vh;
+    height: 90px;
+    background: #f9f9f9;
+    position:fixed;
 }
-.body {
+.accent {
     width: 100%;
-    height: 100em;
-    background: #1b1b1a;
+    height: 10px;
+
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+
+    animation: bannerAccentGradient 15s ease infinite;
 }
-.title {
-    width: 100%;
-    font-size: 6em;
+@keyframes bannerAccentGradient {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}
+.logo {
+    margin-left: 180px;
+    height: 80px;
+    width: 80px;
+
+    display: inline-block;
+    justify-content: left; 
+    align-items: center;
+
+    font-size: 2em;
     font-family: interstate;
+    color: #080808;
+
     -webkit-user-select: none;
     user-select: none;
 }
-.overlay {
-    z-index: 1;
-    background: white;
-    opacity: 10%;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-
-    width: 100%;
+.menu {
+    height: 80px;
+    width: 650px;
     position: absolute;
-    top: 10%;
-    transform: translateY(-50%);
-    text-align: center;
+    right: 180px;
+
+    display: inline-block;
 }
-.undertone {
+.option {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 60px;
+
+    display: inline-block;
+    justify-content: left; 
+    align-items: center;
+}
+.menuButton {
+    height: 60px;
+    width: 200px;
+
+    font-size: 2.5em;
+    font-family: interstate;
+    font-weight: bold;
+    color: #080808;
+
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    background: transparent;
+    border: none;
+}
+.menuButton:hover {
+    cursor: pointer;
+    color: #f9f9f9;
+    box-shadow: inset 0 80px 0 0 #080808;;
+}
+
+.div1 {
     z-index: 0;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-
     width: 100%;
-    position: absolute;
-    top: 10%;
-    transform: translateY(-50%);
-    text-align: center;
-    
-    animation: titleGradient 15s ease infinite;
+    height: 1000px;
+    background-color: #424242;
+    background-image: url("background.jpg");
+    background-size: cover;
 }
-@keyframes titleGradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+.div2 {
+    z-index: 1;
+    width: 100%;
+    height: 1500px;
+    background-color: #c0c0c0;
 }
