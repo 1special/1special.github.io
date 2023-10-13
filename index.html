@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="app.css"/>
         <title>Special</title>
-        <link rel="icon" type="image/jpg" href="favicon.jpg">
+        <link rel="icon" type="image/jpg" href="images/favicon.jpg">
         <link rel="stylesheet" href="https://use.typekit.net/tqg2kya.css">
     </head>
     <body>
         <div class="header">
-            <div class="logo">
-                <h1>SPECIAL</h1>
+            <div class="topContent">
+                <div class="leftHeaderSpacer">
+
+                </div>
+                <div class="logo">
+                    <h1>SPECIAL</h1>
+                </div>
+                <div class="rightHeaderSpacer">
+    
+                </div>
+                <div class="menuOption">
+                    <button class="menuButton" id="2" onClick="menuClick()">☰</button>
+                </div>
+            </div>
+            <div class="menu" id="1">
+                <div class="games">
+                    <div class="rocketLeague">
+                        <a href="rocketleague/index.html">
+                            <button class="gameButton" id="rocketLeagueButtonID" onClick="">ROCKET LEAGUE</button>
+                        </a>
+                    </div>
+                    <div class="blackOps3">
+                        <a href="blackops3/index.html">
+                            <button class="gameButton" id="blackOps3ButtonID" onClick="">BLACK OPS 3: ZOMBIES</button>
+                        </a>
+                    </div>
+                    <div class="rainbow6Siege">
+                        <a href="rainbow6siege/index.html">
+                            <button class="gameButton" id="rainbow6SiegeButtonID" onClick="">RAINBOW SIX SIEGE</button>
+                        </a>
+                    </div>
+                     <div class="minecraft">
+                        <a href="minecraft/index.html">
+                            <button class="gameButton" id="minecraftButtonID" onClick="">MINECRAFT</button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="div2">
-            <video id="backgroundVideo" autoplay loop muted>
-                <source src="backgroundVideo.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="div3">
-
-        </div>
-        <div class="div4">
-            
-        </div>
-        <div class="div5">
-
-        </div>
-        <div class="div6">
             
         </div>
     </body>
-    <script = src="app.js"/></script>
+    <script src="app.js"></script>
 </html>
